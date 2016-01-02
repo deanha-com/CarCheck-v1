@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Car-Check-Buy</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="http://camend.com/ccb/ccb.js"></script>
+
+	<style>
+	iframe {
+     display:none;
+	}
+	</style>
+	
+	<div class="container"><h1><strong>CAR-CHECK-BUY</strong> - (Pre-purchase vehicle check)</h1>
+		<p>Looking to buy a used car? We recommend you doing the following checks. <button type="button" class="btn btn-success btn-sm" id="msBtn" data-toggle="button" aria-pressed="true" autocomplete="off">MOT Status</button> <button type="button" class="btn btn-info btn-sm" id="mhBtn" data-toggle="button" aria-pressed="true" autocomplete="off">MOT History</button></p>
+	</div>
+
+	<div class="container">
+	<iframe id="motStatus" src="https://www.vehicleenquiry.service.gov.uk/" scrolling="auto" align="left" width="100%" height="800"  frameborder="1">
+	  <p>Your browser does not support iframes.</p>
+	</iframe>
+	
+	<iframe id="motHistory" src="https://www.check-mot.service.gov.uk/?_ga=1.900916.407876837.1450167936" scrolling="auto" align="middle" width="100%" height="800"  frameborder="1">
+	  <p>Your browser does not support iframes.</p>
+	</iframe><br><br>
+	<footer align="center">All rights reserved. 2015</footer>
+</body>
+
+</html>
